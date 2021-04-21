@@ -79,4 +79,4 @@ if __name__ == '__main__':
     end_time = time.time()
     total_time = end_time - start_time
     train_epoch =  opt.n_epochs + opt.n_epochs_decay + 1 - opt.epoch_count
-    print('Train with %d epoch, %d batch_size for %d sec' % (train_epoch, opt.batch_size, total_time))
+    print('Train with %d epoch from epoch %d for %d sec, batch_size = %d ' % (train_epoch, opt.epoch_count, total_time, opt.batch_size))
